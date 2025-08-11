@@ -1,5 +1,6 @@
 import './App.css'
 import { useState } from 'react'
+import Button from './components/Button'
 
 function App() {
 
@@ -9,7 +10,6 @@ function App() {
 
   function handleClick() {
     alert('Bem-vindo ao curso de React!')
-
   }
 
   function acrescimo() {
@@ -25,11 +25,28 @@ function App() {
     <>
       
       <h2>Olá mundo!</h2>
-      <button onClick={handleClick}>Clique-me</button>
+
+      <Button 
+        label="Me clique!" 
+        action={handleClick}
+      />
+
       <hr></hr>
-      <button onClick={acrescimo}>+</button>
-      <p>{numero}</p>
-      <button onClick={decrescimo}>-</button>
+
+      <Button 
+        label="-" 
+        action={decrescimo}
+        className="br-button primary"
+      />
+
+      <span className='verde'>{numero}</span>
+
+      <Button 
+        label="+" 
+        action={acrescimo}
+        className="br-button secondary"
+      />
+
     </>
   )
 }

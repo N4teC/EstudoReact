@@ -15,6 +15,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
+    "@govbr-ds/core": "^3.6.1",
+    "@govbr-ds/webcomponents": "^2.0.0-next.43",
+    "@govbr-ds/webcomponents-react": "^2.0.0-next.39",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^4.7.0",
